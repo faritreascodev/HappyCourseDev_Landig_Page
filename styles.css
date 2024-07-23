@@ -1,0 +1,270 @@
+:root {
+    --btn-color: #4A249D;
+    --border-r: .2rem;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.wrap-cta {
+    padding: 1.5rem 0;
+}
+
+.cta-a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--btn-color);
+    padding: .5rem 1rem;
+    border-radius: var(--border-r);
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+/** Header **/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    background: #f2f2f2;
+    padding: 0.25rem;
+}
+
+#header-img {
+    max-width: 35px;
+    height: auto;
+}
+
+/** nav section **/
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--btn-color);
+}
+
+/** contenido del sitio**/
+
+#contentt {
+    height: 100vh;
+    /* background: url(https://img.freepik.com/free-photo/male-system-hacker-coding-security-program-pc-software-programming-firewall-data-encryption-server-using-computer-code-application-script-display_482257-46797.jpg?w=1380&t=st=1721688516~exp=1721689116~hmac=9123cbe3e057f39b230716e2bb989aef9824cda50aeca7cb3931469b1855550e); */
+    background: url(https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #542a5ab3; /* 4dabe7b3 */
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+}
+
+.wrap-contentt-section {
+    max-width: 600px;
+    color: #fff;
+    padding: 15%;
+}
+
+.section {
+    margin: 5rem 0;
+}
+
+.section h2 {
+    padding: 2rem 0;
+}
+
+.wrap-logos-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-brand {
+    width: 200px;
+    padding: 1rem 2rem;
+    filter: grayscale(1);
+}
+
+.wrap-title-section {
+    display: flex;
+    justify-content: center;
+    /* margin: 1rem; */
+    color: #fff;
+    background-color: #694F8E;
+}
+
+.wrap-subtitle-section{
+    display: flex;
+    justify-content: center;
+    color: #878585;
+}
+
+#submit{
+    background-color: var(--btn-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: #694F8E;
+}
+
+.wrap-servicios-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.item-servicios-section {
+    padding: 1rem;
+}
+
+.item-servicios-section img {
+    width: 300px;
+    height: 225px;
+}
+
+.wrap-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrap-img_two-column {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: #e2e2e2;
+    }
+}
+
+.wrap-text-column h3 {
+    padding: 2rem 0;
+}
+
+.wrap-text-column p {
+    padding-bottom: 1rem;
+}
+
+#form {
+    background-color: #f2f2f2;
+    padding: 3rem 1rem;
+    /* margin: 3rem -1; */
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#foot-txt{
+    text-align: justify;
+    padding: 2rem 1;
+}
+
+#form input,
+#form textarea {
+    display: flex;
+    width: 100%;
+    line-height: 1.75rem;
+    border: 1.5px solid #878585;
+    border-radius: var(--border-r);
+}
+
+#form textarea {
+    min-height: 200px;
+}
+
+#form #submit {
+    border: 0;
+    display: inline;
+    cursor: pointer;
+}
+
+/** Footer **/
+
+.footer-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-footer-section {
+    padding: 1rem 0;
+}
+
+.wrap-social-logos ul,
+.wrap-menu-footer-section ul {
+    display: flex;
+    justify-content: center;
+}
+.wrap-social-logos a:hover{
+    opacity: .8;
+}
+
+.social-logo {
+    max-width: 75px;
+    width: 100%;
+    padding: 1rem;
+}
+
+.wrap-menu-footer-section ul li {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+}
+
+.end-links:hover{
+    text-decoration: underline;
+}
+
+.footer-creds {
+    display: flex;
+    justify-content: center;
+}
